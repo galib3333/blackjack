@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Blackjack</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Blackjack</h1>
-        
+
         <!-- Game controls - Added sticky-controls class -->
         <div class="controls sticky-controls">
             <button id="deal-button">Deal</button>
@@ -19,10 +21,13 @@
                 <input type="number" id="bet-amount" min="1" value="10">
                 <button id="place-bet">Place Bet</button>
             </div>
+            <!-- Game status -->
+            <div id="message" class="message">
+                <p>Welcome to Blackjack! Place your bet and start the game.</p>
+            </div>
         </div>
 
-        <!-- Game status -->
-        <div id="message" class="message"></div>
+
 
         <!-- Cards area -->
         <div class="play-area">
@@ -42,4 +47,5 @@
     </div>
     <script src="main.js"></script>
 </body>
-</html> 
+
+</html>

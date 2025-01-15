@@ -100,6 +100,7 @@ button:disabled {
     font-size: 1.2em;
     margin: 10px 0;
     min-height: 30px;
+    padding-top: 5px;
     color: #ffd700;
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
 }
@@ -243,7 +244,7 @@ p {
 .sticky-controls {
     position: sticky;
     top: 0;
-    background-color: #1a1a1a; /* Match your background color */
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c); /* Match your background color */
     z-index: 100;
     padding: 10px 0;
 }
