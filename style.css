@@ -211,7 +211,7 @@ p {
     }
 
     .cards {
-        min-height: 75px;
+        min-height: 160px;
         gap: 5px;
     }
 
@@ -233,18 +233,4 @@ p {
         width: 80px;
         font-size: 0.9em;
     }
-
-    .sticky-controls {
-        padding: 5px 0;
-        border-bottom: 1px solid #ddd;
-    }
-}
-
-/* Add these new styles before the media query */
-.sticky-controls {
-    position: sticky;
-    top: 0;
-    background: linear-gradient(135deg, #1a1a1a, #2c2c2c); /* Match your background color */
-    z-index: 100;
-    padding: 10px 0;
 }

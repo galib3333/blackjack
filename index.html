@@ -11,9 +11,7 @@
 <body>
     <div class="container">
         <h1>Blackjack</h1>
-
-        <!-- Game controls - Added sticky-controls class -->
-        <div class="controls sticky-controls">
+        <div class="controls">
             <button id="deal-button">Deal</button>
             <button id="hit-button" disabled>Hit</button>
             <button id="stand-button" disabled>Stand</button>
@@ -21,14 +19,11 @@
                 <input type="number" id="bet-amount" min="1" value="10">
                 <button id="place-bet">Place Bet</button>
             </div>
-            <!-- Game status -->
-            <div id="message" class="message">
-                <p>Welcome to Blackjack! Place your bet and start the game.</p>
-            </div>
         </div>
-
-
-
+        <!-- Game status -->
+        <div id="message" class="message">
+            <p>Welcome to Blackjack! Place your bet and start the game.</p>
+        </div>
         <!-- Cards area -->
         <div class="play-area">
             <div class="dealer-area">
