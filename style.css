@@ -13,17 +13,17 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
     text-align: center;
     color: #ffd700;
-    font-size: 3em;
+    font-size: 2em;
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 /* Controls Section */
@@ -97,9 +97,9 @@ button:disabled {
 /* Message Display */
 .message {
     text-align: center;
-    font-size: 1.5em;
-    margin: 20px 0;
-    min-height: 40px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    min-height: 30px;
     color: #ffd700;
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
 }
@@ -108,14 +108,14 @@ button:disabled {
 .play-area {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-top: 20px;
+    gap: 20px;
+    margin-top: 10px;
 }
 
 .dealer-area, .player-area {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -129,19 +129,19 @@ h2 {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin: 15px 0;
-    min-height: 120px;
+    margin: 10px 0;
+    min-height: 90px;
 }
 
 .card {
-    width: 80px;
-    height: 120px;
+    width: 60px;
+    height: 90px;
     background: #fff;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #000;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -184,26 +184,66 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    .controls {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 60px;
-        height: 90px;
-        font-size: 1.2em;
+    body {
+        padding: 10px 5px;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .controls {
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .card {
+        width: 50px;
+        height: 75px;
+        font-size: 1em;
+    }
+
+    .cards {
+        min-height: 75px;
+        gap: 5px;
+    }
+
+    .dealer-area, .player-area {
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1em;
+        margin-bottom: 8px;
     }
 
     .message {
-        font-size: 1.2em;
+        font-size: 1em;
     }
+
+    #bet-amount {
+        padding: 6px;
+        width: 80px;
+        font-size: 0.9em;
+    }
+
+    .sticky-controls {
+        padding: 5px 0;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* Add these new styles before the media query */
+.sticky-controls {
+    position: sticky;
+    top: 0;
+    background-color: #1a1a1a; /* Match your background color */
+    z-index: 100;
+    padding: 10px 0;
 }
